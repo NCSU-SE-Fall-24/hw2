@@ -9,12 +9,13 @@ Functions:
 """
 import rand
 
+
 def merge_sort(arr):
     """
-    Performs the merge sort using divide and conquer algorithm 
+    Performs the merge sort using divide and conquer algorithm
 
     Parameters:
-    arr (array): Number array that needs to be sorted 
+    arr (array): Number array that needs to be sorted
 
     Returns:
     array: Returns sorted array
@@ -22,9 +23,10 @@ def merge_sort(arr):
     if len(arr) == 1:
         return arr
 
-    half = len(arr)//2
+    half = len(arr) // 2
 
     return recombine(merge_sort(arr[:half]), merge_sort(arr[half:]))
+
 
 def recombine(left_arr, right_arr):
     """
@@ -54,6 +56,7 @@ def recombine(left_arr, right_arr):
     merge_arr.extend(left_arr[left_index:])
     merge_arr.extend(right_arr[right_index:])
     return merge_arr
+
 
 if __name__ == "__main__":
     local_arr = rand.random_array([None] * 20)
