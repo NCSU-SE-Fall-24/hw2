@@ -24,4 +24,13 @@ jobs:
 
     - name: Run autopep8
       run: |
-        python -m autopep8 --diff -r --aggressive --aggressive hw2_debugging.py rand.py tests
+        output=$(python -m autopep8 --diff -r --aggressive --aggressive hw2_debugging.py rand.py tests)
+        
+        # If differences are found, fail the action
+        if [ -n "$output" ]; then
+          echo "Formatting issues detected!"
+          echo "$output"
+          exit 1  # Fail the action
+        else
+          echo "No formatting issues."
+        fi
