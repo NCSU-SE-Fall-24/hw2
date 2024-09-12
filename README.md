@@ -11,7 +11,7 @@
 ![Issues: Open](https://img.shields.io/github/issues/NCSU-SE-Fall-24/hw2.svg)
 ![Issues: Closed](https://img.shields.io/github/issues-closed/NCSU-SE-Fall-24/hw2.svg)
 
-![Test Workflow Status](https://img.shields.io/github/actions/workflow/status/NCSU-SE-Fall-24/hw2/python-tests.yml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/NCSU-SE-Fall-24/hw2/python-tests.yml?branch=main&event=push&style=flat&logo=build&cacheSeconds=0)
 [![Code Coverage](https://codecov.io/github/NCSU-SE-Fall-24/hw2/branch/main/graph/badge.svg?token=P418av9PS2)](https://codecov.io/github/NCSU-SE-Fall-24/hw2)
 # CSC 510, Software Engineering, Fall 2024 
 ## [Homework 2](https://txt.github.io/se24fall/debug.html) 
