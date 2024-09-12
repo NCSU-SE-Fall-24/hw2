@@ -1,5 +1,5 @@
 import pytest
-from ..hw2_debugging import merge_sort
+from hw2_debugging import merge_sort
 
 def test_merge_sort_negative_numbers():
     arr = [-5, -3, -8, 4, 2]
