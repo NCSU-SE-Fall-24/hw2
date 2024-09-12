@@ -7,7 +7,6 @@ Functions:
 - merge_sort: Main function for performing merge_sort, performs Divide and conquer
 - recombine: Compare the elements and combine the array
 """
-import rand
 
 
 def merge_sort(arr):
@@ -56,10 +55,3 @@ def recombine(left_arr, right_arr):
     merge_arr.extend(left_arr[left_index:])
     merge_arr.extend(right_arr[right_index:])
     return merge_arr
-
-
-if __name__ == "__main__":
-    local_arr = rand.random_array([None] * 20)
-    arr_out = merge_sort(local_arr)
-
-    print(arr_out)
