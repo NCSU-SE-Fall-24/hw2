@@ -7,6 +7,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check for Critical File Deletions
+      run: |
+        deleted_files=$(git diff --name-status HEAD~1..HEAD | grep '^D' | awk '{print $2}')
+
+        # Define critical files and directories
+        CRITICAL_FILES=("hw2_debugging.py")
+        CRITICAL_DIR="tests/"
+
+        # Check if any deleted files match critical files or are in the critical directory
+        for file in $deleted_files; do
+            if [[ " ${CRITICAL_FILES[@]} " =~ " $file " ]] || [[ $file == $CRITICAL_DIR* ]]; then
+                echo "Error: File $file is being deleted and is critical."
+                exit 1
+            fi
+        done
+        
     - name: Checkout code
       uses: actions/checkout@v3
 
