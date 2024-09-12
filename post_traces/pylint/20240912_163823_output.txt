@@ -1,0 +1,7 @@
+[7;33m************* Module hw2_debugging[0m
+hw2_debugging.py:23:0: C0325: [1mUnnecessary parens after 'if' keyword[0m ([1msuperfluous-parens[0m)
+hw2_debugging.py:65:6: E0606: [1;31mPossibly using variable 'arr_out' before assignment[0m ([1;31mpossibly-used-before-assignment[0m)
+
+------------------------------------------------------------------
+Your code has been rated at 8.00/10 (previous run: 7.67/10, +0.33)
+
