@@ -7,6 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check for Modifications to Critical File
+      run: |
+        # Define the critical file
+        CRITICAL_FILE="hw2_debugging.py"
+
+        # Check if the critical file is modified
+        if git diff --name-only HEAD~1..HEAD | grep -q "^$CRITICAL_FILE$"; then
+            if git diff -- $CRITICAL_FILE | grep -q "^[-+]"; then
+                echo "Error: Modifications to $CRITICAL_FILE are not allowed."
+                exit 1
+            fi
+        fi
+    
     - name: Check for Critical File Deletions
       run: |
         deleted_files=$(git diff --name-status HEAD~1..HEAD | grep '^D' | awk '{print $2}')
