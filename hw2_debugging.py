@@ -11,23 +11,22 @@ def mergeSort(arr):
 def recombine(leftArr, rightArr):
     leftIndex = 0
     rightIndex = 0
-    mergeArr = [None] * (len(leftArr) + len(rightArr))
+    mergeArr = []
+
+    # Merge elements from both arrays in sorted order
     while leftIndex < len(leftArr) and rightIndex < len(rightArr):
         if leftArr[leftIndex] < rightArr[rightIndex]:
-            rightIndex += 1
-            mergeArr[leftIndex + rightIndex] = leftArr[leftIndex]
-        else:
+            mergeArr.append(leftArr[leftIndex])
             leftIndex += 1
-            mergeArr[leftIndex + rightIndex] = rightArr[rightIndex]
+        else:
+            mergeArr.append(rightArr[rightIndex])
+            rightIndex += 1
 
-    for i in range(rightIndex, len(rightArr)):
-        mergeArr[leftIndex + rightIndex] = rightArr[i]
+    # Append the remaining elements from both arrays
+    mergeArr.extend(leftArr[leftIndex:])
+    mergeArr.extend(rightArr[rightIndex:])
     
-    for i in range(leftIndex, len(leftArr)):
-        mergeArr[leftIndex + rightIndex] = leftArr[i]
-
     return mergeArr
-
 arr = rand.random_array([None] * 20)
 arr_out = mergeSort(arr)
 
