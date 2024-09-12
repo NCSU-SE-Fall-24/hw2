@@ -14,6 +14,7 @@
 
 [![Test Status](https://github.com/NCSU-SE-Fall-24/hw2/actions/workflows/python-tests.yml/badge.svg)](https://github.com/NCSU-SE-Fall-24/hw2/actions/workflows/python-tests.yml)
 [![autopep8](https://github.com/NCSU-SE-Fall-24/hw2/actions/workflows/autopep8.yml/badge.svg)](https://github.com/NCSU-SE-Fall-24/hw2/actions/workflows/autopep8.yml)
+[![pylint](https://github.com/NCSU-SE-Fall-24/hw2/actions/workflows/pylint.yml/badge.svg)](https://github.com/NCSU-SE-Fall-24/hw2/actions/workflows/pylint.yml)
 [![Code Coverage](https://codecov.io/github/NCSU-SE-Fall-24/hw2/branch/main/graph/badge.svg?token=P418av9PS2)](https://codecov.io/github/NCSU-SE-Fall-24/hw2)
 # CSC 510, Software Engineering, Fall 2024 
 ## [Homework 2](https://txt.github.io/se24fall/debug.html) 
