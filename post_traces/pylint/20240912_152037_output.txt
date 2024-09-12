@@ -1,0 +1,12 @@
+[7;33m************* Module hw2_debugging[0m
+hw2_debugging.py:1:0: C0114: [1mMissing module docstring[0m ([1mmissing-module-docstring[0m)
+hw2_debugging.py:3:0: C0116: [1mMissing function or method docstring[0m ([1mmissing-function-docstring[0m)
+hw2_debugging.py:3:15: W0621: [35mRedefining name 'arr' from outer scope (line 31)[0m ([35mredefined-outer-name[0m)
+hw2_debugging.py:11:0: C0116: [1mMissing function or method docstring[0m ([1mmissing-function-docstring[0m)
+hw2_debugging.py:13:4: C0103: [1mVariable name "rightIndex" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:14:4: C0103: [1mVariable name "mergeArr" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:23:12: C0103: [1mVariable name "rightIndex" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+
+------------------------------------------------------------------
+Your code has been rated at 7.67/10 (previous run: 7.00/10, +0.67)
+

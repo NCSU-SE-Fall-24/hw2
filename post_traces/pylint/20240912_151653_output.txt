@@ -1,0 +1,18 @@
+[7;33m************* Module hw2_debugging[0m
+hw2_debugging.py:34:0: C0305: [1mTrailing newlines[0m ([1mtrailing-newlines[0m)
+hw2_debugging.py:1:0: C0114: [1mMissing module docstring[0m ([1mmissing-module-docstring[0m)
+hw2_debugging.py:3:0: C0116: [1mMissing function or method docstring[0m ([1mmissing-function-docstring[0m)
+hw2_debugging.py:3:0: C0103: [1mFunction name "mergeSort" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:3:14: W0621: [35mRedefining name 'arr' from outer scope (line 29)[0m ([35mredefined-outer-name[0m)
+hw2_debugging.py:11:0: C0116: [1mMissing function or method docstring[0m ([1mmissing-function-docstring[0m)
+hw2_debugging.py:11:14: C0103: [1mArgument name "leftArr" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:11:23: C0103: [1mArgument name "rightArr" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:12:4: C0103: [1mVariable name "leftIndex" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:13:4: C0103: [1mVariable name "rightIndex" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:14:4: C0103: [1mVariable name "mergeArr" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:20:12: C0103: [1mVariable name "leftIndex" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+hw2_debugging.py:23:12: C0103: [1mVariable name "rightIndex" doesn't conform to snake_case naming style[0m ([1minvalid-name[0m)
+
+------------------------------------------------------------------
+Your code has been rated at 5.52/10 (previous run: 5.17/10, +0.34)
+

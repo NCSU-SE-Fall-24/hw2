@@ -1,0 +1,7 @@
+[7;33m************* Module hw2_debugging[0m
+hw2_debugging.py:12:0: C0116: [1mMissing function or method docstring[0m ([1mmissing-function-docstring[0m)
+hw2_debugging.py:20:0: C0116: [1mMissing function or method docstring[0m ([1mmissing-function-docstring[0m)
+
+------------------------------------------------------------------
+Your code has been rated at 9.33/10 (previous run: 9.00/10, +0.33)
+
