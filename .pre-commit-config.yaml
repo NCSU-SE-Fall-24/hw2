@@ -1,0 +1,61 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-yaml
+  - repo: local
+    hooks:
+      - id: autopep8
+        name: autopep8
+        entry: autopep8
+        language: system
+        types:
+          - python
+        args:
+          - --diff
+          - -r
+          - --aggressive
+          - --aggressive
+          - hw2_debugging.py
+          - rand.py
+          - tests
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types:
+          - python
+        args:
+          - hw2_debugging.py
+          - rand.py
+          - tests/
+          - --output-format=colorized
+
+  - repo: local
+    hooks:
+      - id: pyflakes
+        name: pyflakes
+        entry: pyflakes
+        language: system
+        types:
+          - python
+        args:
+          - hw2_debugging.py
+          - rand.py
+          - tests/
+
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: pytest
+        language: system
+        types:
+          - python
+        args:
+          - --maxfail=1
+          - --disable-warnings
+          - -q
+          
